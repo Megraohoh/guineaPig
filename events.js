@@ -1,32 +1,28 @@
 //*****VARIABLES*****
-var document.getElementById("page-header");
-var document.getElementById("page-title");
-var document.getElementById("output-target");
-var document.getElementById("guinea-pig");
-var document.getElementById("add-color");
-var document.getElementById("make-large");
-var document.getElementById("add-border");
-var document.getElementById("add-rounding");
-
+var pageHeader = document.getElementById("page-header");
+var pageTitle = document.getElementById("page-title");
+var keypressInput = document.getElementById("keypress-input");
+var guineaPig = document.getElementById("guinea-pig");
+var addColor = document.getElementById("add-color");
+var makeLarge = document.getElementById("make-large");
+var addBorder = document.getElementById("add-border");
+var addRounding = document.getElementById("add-rounding");
+var outputTarget = document.getElementById("output-target");
 //*****FUNCTIONS*****
 
 document.addEventListener("click", function(e){
 	writeToOutputTarget(e.target.innerText);
 });
 
-
-
-
-
-
-// When any section is clicked the output target text should be 
-//"You clicked on the {text of the section} section"
-//***click
-
-
 // When the mouse is over the h1 tag, the output element should 
 //contain the text "You moved your mouse over the header".
 //***mouseover
+
+pageTitle.addEventListener("mouseover", function(){
+	outputTarget.innerHTML = 'You moved your mouse over the header';
+});
+
+
 
 
 // When the mouse leaves the h1 tag, the output element should 
@@ -46,9 +42,7 @@ document.addEventListener("click", function(e){
 //font size should become much larger.
 //***click/button
 
-document.addEventListener("click", function(e){
 
-});
 
 // When you click the "Capture it" button, the guinea-pig element 
 //should have a border added to it.
@@ -60,6 +54,9 @@ document.addEventListener("click", function(e){
 //border should become rounded.
 //***click/button
 
+//*****OUTPUT TARGET TEXT*****
 
-
+function writeToOutputTarget(text){
+	outputTarget.innerHTML = 'You clicked on the ' + text + ' section';
+};
 
