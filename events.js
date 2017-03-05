@@ -1,4 +1,5 @@
 //*****VARIABLES*****
+
 var pageHeader = document.getElementById("page-header");
 var pageTitle = document.getElementById("page-title");
 var keypressInput = document.getElementById("keypress-input");
@@ -8,51 +9,40 @@ var makeLarge = document.getElementById("make-large");
 var addBorder = document.getElementById("add-border");
 var addRounding = document.getElementById("add-rounding");
 var outputTarget = document.getElementById("output-target");
+
 //*****FUNCTIONS*****
 
 document.addEventListener("click", function(e){
 	writeToOutputTarget(e.target.innerText);
 });
 
-// When the mouse is over the h1 tag, the output element should 
-//contain the text "You moved your mouse over the header".
-//***mouseover
-
 pageTitle.addEventListener("mouseover", function(){
 	outputTarget.innerHTML = 'You moved your mouse over the header';
 });
 
+pageTitle.addEventListener("mouseout", function(){
+	outputTarget.innerHTML = 'You left me!!';
+});
 
+keypressInput.addEventListener("keypress", function(e){
+	outputTarget.innerHTML = e.target.value;
+});
 
+addColor.addEventListener("click", function(){
+	guineaPig.classList.add("add-color");
+});
 
-// When the mouse leaves the h1 tag, the output element should 
-//contain the text "You left me!!".
-//***mouseout
+makeLarge.addEventListener("click", function(){
+	guineaPig.classList.add("make-large");
+});
 
-// When you type characters into the input field, the output 
-//element should mirror the text in the input field.
+addBorder.addEventListener("click", function(){
+	guineaPig.classList.add("add-border");
+});
 
-// When you click the "Add color" button, the guinea-pig element's 
-//text color should change to blue.
-//***click/button
-
-
-
-// When you click the "Hulkify" button, the guinea-pig element's 
-//font size should become much larger.
-//***click/button
-
-
-
-// When you click the "Capture it" button, the guinea-pig element 
-//should have a border added to it.
-//***click/button
-
-
-
-// When you click the "Rounded" button, the guinea-pig element's 
-//border should become rounded.
-//***click/button
+addRounding.addEventListener("click", function(){
+	guineaPig.classList.add("add-rounding");
+});
 
 //*****OUTPUT TARGET TEXT*****
 

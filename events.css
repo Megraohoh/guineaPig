@@ -1,9 +1,29 @@
-/*styling to be added later*/
+article section: first-child {
+	font-weight: bolder;
+}
 
-/*The first section's text should be bold.*/
+article section: last-child {
+	font-weight: bold;
+	font-style: italic;
+}
 
-/*The last section's text should be bold and italicized.*/
+.add-color {
+	color: blue;
+}
 
+#make-large {
+	font-size: 100px;
+}
 
-/*Make the buttons stop appearing next to each other as inline */
-/*elements. Change them into block elements.*/
+#add-border {
+	border: 1px solid black;
+}
+
+#add-rounding {
+	border-radius: 4%;
+}
+
+button {
+	display: block;
+}
+
