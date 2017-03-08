@@ -11,15 +11,15 @@ article section: last-child {
 	color: blue;
 }
 
-#make-large {
+.make-large {
 	font-size: 100px;
 }
 
-#add-border {
+.add-border {
 	border: 1px solid black;
 }
 
-#add-rounding {
+.add-rounding {
 	border-radius: 4%;
 }
 
