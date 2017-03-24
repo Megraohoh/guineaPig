@@ -24,7 +24,7 @@ pageTitle.addEventListener("mouseout", function(){
 	outputTarget.innerHTML = 'You left me!!';
 });
 
-keypressInput.addEventListener("keypress", function(e){
+keypressInput.addEventListener("keyup", function(e){
 	outputTarget.innerHTML = e.target.value;
 });
 
