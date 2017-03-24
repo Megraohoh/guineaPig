@@ -1,0 +1,29 @@
+article section:first-child {
+	font-weight: bolder;
+}
+
+article section:last-child {
+	font-weight: bold;
+	font-style: italic;
+}
+
+.add-color {
+	color: blue;
+}
+
+.make-large {
+	font-size: 100px;
+}
+
+.add-border {
+	border: 1px solid black;
+}
+
+.add-rounding {
+	border-radius: 4%;
+}
+
+button {
+	display: block;
+}
+
