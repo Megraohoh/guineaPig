@@ -1,8 +1,8 @@
-article section: first-child {
+article section:first-child {
 	font-weight: bolder;
 }
 
-article section: last-child {
+article section:last-child {
 	font-weight: bold;
 	font-style: italic;
 }
